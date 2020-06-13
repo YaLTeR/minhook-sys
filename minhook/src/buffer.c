@@ -169,6 +169,8 @@ static PMEMORY_BLOCK GetMemoryBlock(LPVOID pOrigin)
 
     // Make room for MEMORY_BLOCK_SIZE bytes.
     maxAddr -= MEMORY_BLOCK_SIZE - 1;
+#else
+    (void) (pOrigin);
 #endif
 
     // Look the registered blocks for a reachable one.
