@@ -1,6 +1,11 @@
 use std::{env, path::Path};
 
 fn main() {
+    if let Ok(_) = env::var("DOCS_RS") {
+        // Docs don't need to build the library.
+        return;
+    }
+
     if env::var("CARGO_CFG_WINDOWS").is_err() {
         panic!("only Windows is supported");
     }
