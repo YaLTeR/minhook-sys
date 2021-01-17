@@ -1,6 +1,6 @@
 [package]
 name = "minhook-sys"
-version = "0.1.0" # remember to update html_root_url
+version = "0.1.1" # remember to update html_root_url
 authors = ["Ivan Molodetskikh <yalterz@gmail.com>"]
 description = "Raw bindings to MinHook."
 edition = "2018"

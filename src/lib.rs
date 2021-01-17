@@ -3,7 +3,7 @@
 //!
 //! MinHook is bundled and built with `cc`. Cross-compiling from Linux works fine.
 
-#![doc(html_root_url = "https://docs.rs/minhook-sys/0.1.0")]
+#![doc(html_root_url = "https://docs.rs/minhook-sys/0.1.1")]
 
 use std::os::raw::*;
 
