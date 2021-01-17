@@ -1,9 +1,17 @@
 [package]
 name = "minhook-sys"
-version = "0.1.0"
+version = "0.1.0" # remember to update html_root_url
 authors = ["Ivan Molodetskikh <yalterz@gmail.com>"]
+description = "Raw bindings to MinHook."
 edition = "2018"
 license = "BSD-2-Clause"
 
+repository = "https://github.com/YaLTeR/minhook-sys"
+keywords = ["intercept"]
+categories = ["external-ffi-bindings"]
+
 [build-dependencies]
 cc = "1.0.54"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-pc-windows-msvc", "i686-pc-windows-msvc"]

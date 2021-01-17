@@ -7,7 +7,7 @@ fn main() {
 
     let hde = match env::var("CARGO_CFG_TARGET_ARCH").unwrap().as_str() {
         "x86" => "hde/hde32.c",
-        "x64" => "hde/hde64.c",
+        "x86_64" => "hde/hde64.c",
         _ => panic!("only x86 and x86_64 architectures are supported"),
     };
 

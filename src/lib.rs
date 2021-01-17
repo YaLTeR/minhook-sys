@@ -1,3 +1,10 @@
+//! Raw bindings to [MinHook](http://www.codeproject.com/KB/winsdk/LibMinHook.aspx), the
+//! minimalistic x86/x64 API hooking library for Windows.
+//!
+//! MinHook is bundled and built with `cc`. Cross-compiling from Linux works fine.
+
+#![doc(html_root_url = "https://docs.rs/minhook-sys/0.1.0")]
+
 use std::os::raw::*;
 
 #[allow(non_camel_case_types)]
